@@ -30,7 +30,7 @@ export default function UserList() {
   const handleDelete = async (idUser) => {
     try {
       console.log(idUser);
-      // await userApi.DeleteUser( idUser);
+      await userApi.DeleteUser( idUser);
       const newData = data.filter((item)=>{
         return item.id !== idUser
       })
